@@ -7,7 +7,9 @@
 
 **CHATBOT PROGRAM**
 
-This program is meant to be a simple chatbot capable of 30 rounds of semi-natural speech. This was initally done via simple phrase recognition but has been upgraded to use python's natural language toolkit, and then further upgraded to include a few basic APIs. Implemented features include:
+This program is meant to be a simple chatbot capable of 30 rounds of semi-natural speech. This was initally done via simple phrase recognition but has been upgraded to use python's natural language toolkit, and then further upgraded to include a few basic APIs. 
+
+## Toolkits added for Group A3
 
 - Misspelling handling via Porter Stemmer.
 > Program stems user input and checks against stemmed sentences on the backend, allowing the system to handle minor gramatical errors.
@@ -40,6 +42,15 @@ More varried responses (some not shown, bad RNG)<br/>
 ![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
 
 ## APIs added for Individual Project
+
+- Wolfram API.
+> Program can send "What is" "How much/many" or math problems to Wolfram and return the response.
+
+- Wikipedia API.
+> Program can return the first sentence of any wikipedia article to give a general summary of a topic.
+
+- Microsoft Translate API.
+> Program can parrot back a sentence the user inputs in another language.
 
 Wolfram API<br/>
 ![WOLF](https://github.com/MasonPles/COSC310FinalProject/blob/main/Images/wolf.png?raw=true "Wolfram API")
