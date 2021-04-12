@@ -4,6 +4,10 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.tag import pos_tag
 from nltk.chunk import conlltags2tree, tree2conlltags
+from translate import Translator
+import wolframalpha
+import wikipedia
+
 ps = PorterStemmer()
 
 ## Here we check what the input from the user was and then determine which case
@@ -24,6 +28,33 @@ def psStem(e):
     ## We take the input string, explode it into an array,
     ## stem each word, and recombine the stemmed sentence.
     return stemmed
+
+def translate(strString, strTolang):    
+    translator = Translator(to_lang=strTolang)
+    translation = translator.translate(strString)
+    ## Code adapted from https://www.codeproject.com/Questions/4051397/Python-code-to-convert-text-from-one-language-to-a
+    ## takes a string and a language code and translates using Microsoft (aka Bing) translate API
+    return (str(translation))
+
+
+def wolfram(question):
+    app_id = 'A8Y4J6-WPRPYAYXXX'
+    client = wolframalpha.Client(app_id)
+    res = client.query(question)
+    ## If there's no response returned, return an error string.
+    ## Uses the wolfram API to answer queries
+    try:
+        answer = next(res.results).text
+        return(answer)
+    except:
+        return('error')
+
+
+def wiki(query):
+    ## Pretty simple here, uses the Wikipedia API to return the summary of
+    ## whatever string is passed in.
+    return(wikipedia.summary(query, sentences=1))
+
 
 def getPOS(e):
     words = e.split()
@@ -85,6 +116,16 @@ def interpolate(opcode, e):
         if team == 'N/A': return (res.formulateResponse(36))
         elif psStem("don't watch hockey") in phrase: return (res.formulateResponse(37))
         else: return (res.formulateResponse(38, team))
+
+    elif int(opcode) == 5:
+        french = translate(e, 'fr')
+        return(res.formulateResponse(41, french))
+
+    elif int(opcode) == 6:
+        k = wolfram(e)
+        if (k != 'error'): return(res.formulateResponse(42, k))
+        else: return(res.formulateResponse(43, ""))
+
 
     ## If we've exhausted the possible opcodes, just check for string matching.
     else:    
@@ -180,6 +221,15 @@ def interpolate(opcode, e):
             
         elif psStem("Can I ask you some personal questions") in phrase: 
             return (res.formulateResponse (32,"")) 
+
+        elif psStem("Tell me about") in phrase:
+            x = e.split()
+            query = x[len(x)-1]
+            k = wiki(query)
+            return (res.formulateResponse (39,k)) 
+
+        elif psStem("Can I ask you a question") in phrase: 
+            return (res.formulateResponse (40,"")) 
 
         ## If we couldn't find a match in the input, return "I don't understand."
         else :

@@ -7,13 +7,11 @@ def formulateResponse(code, val):
 
     if code == 0:
         x = randint(0, 4)
-        if x is 0: return("1Robert: Sorry, I don't understand.\n")
-        if x is 1: return("1Robert: I didn't catch that, sorry!\n")
-        if x is 2: return("1Robert: Woopsie, I don't know what you mean...\n")
-        if x is 3: return("1Robert: Hmmmm... I don't know what that means.\n")
-        if x is 4: return("1Robert: Could you try again? I didn't understand that.\n")
-
-        
+        if x == 0: return("1Robert: Sorry, I don't understand.\n")
+        if x == 1: return("1Robert: I didn't catch that, sorry!\n")
+        if x == 2: return("1Robert: Woopsie, I don't know what you mean...\n")
+        if x == 3: return("1Robert: Hmmmm... I don't know what that means.\n")
+        if x == 4: return("1Robert: Could you try again? I didn't understand that.\n")
 
     elif code == 1:
         return("2Robert: Hello! Nice to meet you!\nRobert: What's your name?\n")
@@ -73,7 +71,7 @@ def formulateResponse(code, val):
         return ("1Robert: I don't have a phone number, I do have a github repo though!\n")
     
     elif code == 20: 
-        return ("1Robert: I was developed to communicate in English.\n")
+        return ("5Robert: I can speak any language! Send me something and I'll tell you it in french!\n")
     
     elif code == 21: 
         return ("1Robert: I just want to chat with you, " + val + "\n")
@@ -128,4 +126,19 @@ def formulateResponse(code, val):
 
     elif code == 38:
         return ("1Robert: You like the " + val + "? Awesome!\n")
+
+    elif code == 39:
+        return ("1Robert: " + val + "\n")
+
+    elif code == 40:
+        return ("6Robert: Sure! What do you want to ask!\n")
+
+    elif code == 41:
+        return ("1Robert: " + val + "\n")
+
+    elif code == 42:
+        return ("1Robert: " + val + "\n")
+
+    elif code == 43:
+        return ("6Robert: Hmmm... I don't understand. Please ask again!\n")
 
