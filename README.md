@@ -24,28 +24,28 @@ This program is meant to be a simple chatbot capable of 30 rounds of semi-natura
 - More varried responses when the agent doesn't understand.
 > In order to make the program a bit more dynamic, it can now randomly pick from one of five error sentences instead of just the one.
 
-POS Tagging
+POS Tagging<br/>
 ![POS](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/pos.png?raw=true "Demonstration of POS tagging")
 
-Named Entity Recognition
+Named Entity Recognition<br/>
 ![NER](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/ner.png?raw=true "Demonstration of Named Entity Recognition")
 
-Stemming
+Stemming<br/>
 ![STEM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/stem.png?raw=true "Demonstration of Porter Stemmer")
 
-GUI
+GUI<br/>
 ![GUI](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/gui.png?raw=true "Demonstration of GUI")
 
-More varried responses (some not shown, bad RNG)
+More varried responses (some not shown, bad RNG)<br/>
 ![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
 
 **APIs added for Individual Project**
 
-Wolfram API
+Wolfram API<br/>
 ![WOLF](https://github.com/MasonPles/COSC310FinalProject/blob/main/Images/wolf.png?raw=true "Wolfram API")
 
-Wikipedia API
+Wikipedia API<br/>
 ![WIKI](https://github.com/MasonPles/COSC310FinalProject/blob/main/Images/wiki.png?raw=true "Wikipedia API")
 
-Microsoft Translate API
+Microsoft Translate API<br/>
 ![TRANSLATE](https://github.com/MasonPles/COSC310FinalProject/blob/main/Images/translate.png?raw=true "Microsoft Translate API")
