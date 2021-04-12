@@ -7,7 +7,7 @@
 
 **CHATBOT PROGRAM**
 
-This program is meant to be a simple chatbot capable of 30 rounds of semi-natural speech. This was initally done via simple phrase recognition but has been upgraded to use python's natural language toolkit. Implemented features include:
+This program is meant to be a simple chatbot capable of 30 rounds of semi-natural speech. This was initally done via simple phrase recognition but has been upgraded to use python's natural language toolkit, and then further upgraded to include a few basic APIs. Implemented features include:
 
 - Misspelling handling via Porter Stemmer.
 > Program stems user input and checks against stemmed sentences on the backend, allowing the system to handle minor gramatical errors.
@@ -24,17 +24,20 @@ This program is meant to be a simple chatbot capable of 30 rounds of semi-natura
 - More varried responses when the agent doesn't understand.
 > In order to make the program a bit more dynamic, it can now randomly pick from one of five error sentences instead of just the one.
 
-
-![POS](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/pos.png?raw=true "Demonstration of POS tagging")
 POS Tagging
-![NER](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/ner.png?raw=true "Demonstration of Named Entity Recognition")
+![POS](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/pos.png?raw=true "Demonstration of POS tagging")
+
 Named Entity Recognition
-![STEM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/stem.png?raw=true "Demonstration of Porter Stemmer")
+![NER](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/ner.png?raw=true "Demonstration of Named Entity Recognition")
+
 Stemming
-![GUI](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/gui.png?raw=true "Demonstration of GUI")
+![STEM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/stem.png?raw=true "Demonstration of Porter Stemmer")
+
 GUI
-![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
+![GUI](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/gui.png?raw=true "Demonstration of GUI")
+
 More varried responses (some not shown, bad RNG)
+![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
 
 **APIs added for Individual Project**
 
