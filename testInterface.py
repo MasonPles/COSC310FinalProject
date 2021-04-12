@@ -1,7 +1,7 @@
 from tkinter import *
 from Interface import phraseinput as pi
 
-opcode = 1
+opcode = 0
 
 root = Tk() 
 root.geometry("550x700") 
