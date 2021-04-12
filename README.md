@@ -36,3 +36,13 @@ GUI
 ![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
 More varried responses (some not shown, bad RNG)
 
+**APIs added for Individual Project**
+
+Wolfram API
+![WOLF](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/wolf.png?raw=true "Wolfram API")
+
+Wikipedia API
+![WIKI](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/wiki.png?raw=true "Wikipedia API")
+
+Microsoft Translate API
+![TRANSLATE](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/translate.png?raw=true "Microsoft Translate API")
