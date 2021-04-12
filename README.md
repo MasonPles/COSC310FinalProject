@@ -39,7 +39,7 @@ GUI<br/>
 More varried responses (some not shown, bad RNG)<br/>
 ![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
 
-**APIs added for Individual Project**
+## APIs added for Individual Project
 
 Wolfram API<br/>
 ![WOLF](https://github.com/MasonPles/COSC310FinalProject/blob/main/Images/wolf.png?raw=true "Wolfram API")
